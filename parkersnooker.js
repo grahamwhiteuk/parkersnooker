@@ -319,7 +319,7 @@ parkersnooker.service('dataService', function($http) {
     //var URL = year + '.csv';
 
     // Get from Google Sheets
-    var API_KEY = 'AIzaSyC2-tsc477p6xVsAeBZje18BQNg-JDWY5Q'; // https://console.developers.google.com
+    var API_KEY = 'AIzaSyAHVyyi0XRFC4voZXi2DtiEXQUw2V82Brg'; // https://console.developers.google.com
     var URL = 'https://content-sheets.googleapis.com/v4/spreadsheets/' + sheets[tournament] + '/values/A1%3AZ99?key=' + API_KEY;
 
     document.body.style.cursor='wait';
