@@ -1,0 +1,24 @@
+    <!--
+      Final Stages
+    -->
+    <div class="panel panel-default" ng-controller="CollapseCtrl">
+      <div class="panel-heading" ng-click="isCollapsed = !isCollapsed">
+        <h3 class="panel-title">Final Stages <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isCollapsed, 'glyphicon-chevron-right': !isCollapsed}"></i></h3>
+      </div>
+      <div class="panel-body" uib-collapse="isCollapsed">
+      
+      <h4>Winner</h4>
+      <p>Wayne Rogers</p>
+      
+      <h4>Final</h4>
+      <p>Wayne Rogers vs Richard Parker</p>
+      
+      <h4>Semi Finals</h4>
+      <p>Semi Final 1: Graham White vs Wayne Rogers</p>
+      <p>Semi Final 2: Richard Parker vs James Wright</p>
+      
+      <h4>The Plate</h4>
+      <p>Richard Brooks vs Bob Dickson</p>
+      
+      </div><!-- /.panel-body-->
+    </div><!-- /.panel-->
