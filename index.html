@@ -22,7 +22,7 @@
   </style>
 </head>
 <body>
-  
+
   <!--
     Nav Bar
   -->
@@ -49,19 +49,19 @@
       </div>
     </div>
 	</nav>
-  
+
   <div class="jumbotron">
     <div class="container">
       <h1 ng-controller="tournamentCtrl">Parker Snooker {{tournament}}</h1>
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" ng-controller="tournamentCtrl">
 
-    <div ng-controller="tournamentCtrl" ng-include="tournament + '.html'"></div>    
-    <div ng-include="'from-spreadsheet.html'"></div>
-    
+    <div ng-include="tournament + '.html'"></div>
+    <div ng-include="'from-spreadsheet.html'" ng-if="tournament > 2015"></div>
+
   </div><!-- /.container-->
-  
+
 </body>
 </html>
