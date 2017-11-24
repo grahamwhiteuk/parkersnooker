@@ -3,6 +3,27 @@
 -->
 <div class="panel panel-default" ng-controller="CollapseCtrl">
   <div class="panel-heading" ng-click="isCollapsed = !isCollapsed">
+    <h3 class="panel-title">Final Stages <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isCollapsed, 'glyphicon-chevron-right': !isCollapsed}"></i></h3>
+  </div>
+    <div class="panel-body" uib-collapse="isCollapsed">
+
+    <h4>Winner</h4>
+    <p>Graham White</p>
+
+    <h4>Final</h4>
+    <p>Richard Parker 1-2 Graham White</p>
+
+    <h4>Semi Finals</h4>
+    <p>Semi Final 1: Richard Parker 2-0 Max Parker</p>
+    <p>Semi Final 2: Graham White 2-0 Bob Dickson</p>
+  </div><!-- /.panel-body-->
+</div><!-- /.panel-->
+
+<!--
+  Group Stages
+-->
+<div class="panel panel-default" ng-controller="CollapseCtrl">
+  <div class="panel-heading" ng-click="isCollapsed = !isCollapsed">
     <h3 class="panel-title">Group Stages <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isCollapsed, 'glyphicon-chevron-right': !isCollapsed}"></i></h3>
   </div>
   <div class="panel-body" uib-collapse="isCollapsed">
@@ -13,7 +34,7 @@
     <tr><th>Player</th><th>Matches Played</th><th>Matches Won</th><th>Frames Won</th><th>Highest Break</th><th>Position</th></tr>
   </thead>
   <tbody>
-    <tr><td> Richard Parker</td><td>4</td><td>3</td><td>8</td><td>22</td><td>1</td></tr>
+    <tr><td>Richard Parker</td><td>4</td><td>3</td><td>8</td><td>22</td><td>1</td></tr>
     <tr><td>Wayne Rogers (The Punisher)</td><td>2</td><td>0</td><td>2</td><td>15</td><td>5</td></tr>
     <tr><td>Bob Dickson</td><td>4</td><td>3</td><td>8</td><td>22</td><td>2</td></tr>
     <tr><td>James Wright</td><td>3</td><td>1</td><td>3</td><td>18</td><td>3</td></tr>
