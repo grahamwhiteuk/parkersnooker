@@ -1,4 +1,22 @@
 <!--
+  Media Coverage
+-->
+<div class="panel panel-default" ng-controller="CollapseCtrl">
+  <div class="panel-heading" ng-click="isCollapsed = !isCollapsed">
+    <h3 class="panel-title">Media Coverage <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isCollapsed, 'glyphicon-chevron-right': !isCollapsed}"></i></h3>
+  </div>
+  <div class="panel-body" uib-collapse="isCollapsed">
+
+    <h4>Pictures</h4>
+    <div class="media">
+      <a data-flickr-embed="true"  href="https://www.flickr.com/photos/graham_alton/11391183604/" title="Parker Snooker 2013 Plate"><img src="https://farm3.staticflickr.com/2830/11391183604_e8f0e59da5_n.jpg" width="360" height="240" alt="Parker Snooker 2013 Plate"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+      <a data-flickr-embed="true"  href="https://www.flickr.com/photos/graham_alton/11391281213/" title="Parker Snooker 2013 Final"><img src="https://farm3.staticflickr.com/2810/11391281213_ec2f5cc4c1_m.jpg" width="240" height="240" alt="Parker Snooker 2013 Final"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    </div>
+
+  </div><!-- /.panel-body-->
+</div><!-- /.panel-->
+
+<!--
   Final Stages
 -->
 <div class="panel panel-default" ng-controller="CollapseCtrl">
@@ -19,6 +37,9 @@
 
   <h4>The Plate Winner</h4>
   <p>Wayne Rogers</p>
+
+  <h4>The Plate Final</h4>
+  <p>Max Parker 1-2 Wayne Rogers</p>
 
   <h4>The Plate Semi Finals</h4>
   <p>The Plate Semi Final 1: Max Parker 2-1 Nigel Kaye</p>
