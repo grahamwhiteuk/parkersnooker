@@ -78,7 +78,8 @@ parkersnooker.controller('leagueTablesCtrl', function($scope,dataService) {
         // set or update the values for player 1
         $scope.leagueTables[player1].name = player1;
         $scope.leagueTables[player1].group = group;
-        $scope.leagueTables[player1].matchesPlayed += 1;
+        if (p1score + p2score > 0)
+          $scope.leagueTables[player1].matchesPlayed += 1;
         if (p1score > p2score) {
           $scope.leagueTables[player1].matchesWon += 1;
         } else if (p2score > p1score) {
@@ -106,7 +107,8 @@ parkersnooker.controller('leagueTablesCtrl', function($scope,dataService) {
         // set or update the values for player 1
         $scope.leagueTables[player2].name = player2;
         $scope.leagueTables[player2].group = group;
-        $scope.leagueTables[player2].matchesPlayed += 1;
+        if (p1score + p2score > 0)
+          $scope.leagueTables[player2].matchesPlayed += 1;
         if (p1score > p2score) {
           $scope.leagueTables[player2].matchesLost += 1;
         } else if (p2score > p1score) {
@@ -148,9 +150,9 @@ parkersnooker.controller('fixturesResultsCtrl', function($scope,dataService) {
     .then(function(response) {
       $scope.csvData = response;
       for (var i = 1; i < $scope.csvData.length; i++) {
-        if ($scope.csvData[i][3] === "") {
+        if ($scope.csvData[i][4] === "") {
           // result is TBC
-          $scope.csvData[i][4] = "TBC"
+          $scope.csvData[i][4] = "vs"
         } else {
           // merge cells
           $scope.csvData[i][4] += "-" + $scope.csvData[i][5];
@@ -359,7 +361,8 @@ parkersnooker.service('dataService', function($http) {
     '2013': null,
     '2014': null,
     '2016': '19ufPv05ULH9XemwCVMzX5wLogOJEHaFRlluYhXADGBs',
-    '2017': '1B8I8QmSdHKtpNwMjWtmp1hB1OsRqexfho7sOAl5ACeY'
+    '2017': '1B8I8QmSdHKtpNwMjWtmp1hB1OsRqexfho7sOAl5ACeY',
+    '2018': '1bIvEAlqQgKGdemokaiew_WZfQ1Yyu2UR1N1EtLCVTRU'
   }
 
   return {
