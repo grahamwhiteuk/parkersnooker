@@ -127,7 +127,7 @@ parkersnooker.controller('leagueTablesCtrl', function($scope,dataService) {
         sortable.push($scope.leagueTables[player]);
 
       // do the sort also with a customised function to sort on head to head result
-      $scope.leagueTables = dataService.multisort(sortable, ['matchesWon','framesWon','highBreak'], ['DESC','DESC','DESC'], dataService.tie_breaker(player1,player2));
+      $scope.leagueTables = dataService.multisort(sortable, ['matchesWon','framesWon','highBreak'], ['DESC','DESC','DESC'], dataService.tie_breaker);
     }, function(err) {
       console.log(err);
     });
