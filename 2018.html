@@ -1,4 +1,35 @@
     <!--
+      Media Coverage
+    -->
+    <div class="panel panel-default" ng-controller="CollapseCtrl">
+      <div class="panel-heading" ng-click="isCollapsed = !isCollapsed">
+        <h3 class="panel-title">Media Coverage <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isCollapsed, 'glyphicon-chevron-right': !isCollapsed}"></i></h3>
+      </div>
+      <div class="panel-body" uib-collapse="isCollapsed">
+
+        <h4>Videos</h4>
+        <div class="media">
+          <iframe src="https://www.youtube.com/embed/DzPB3wdoVrA?rel=0" frameborder="0" gesture="media" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/pXhbJEXThSw?rel=0" frameborder="0" gesture="media" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/iP8co432PYI?rel=0" frameborder="0" gesture="media" allowfullscreen></iframe>
+        </div>
+
+        <h4>Pictures</h4>
+        <div class="media">
+          <a data-flickr-embed="true"  href="https://www.flickr.com/photos/graham_alton/40186836414/in/dateposted/" title="The Table is Ready"><img src="https://farm1.staticflickr.com/820/40186836414_aa5eac4047_n.jpg" width="320" height="240" alt="The Table is Ready"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+          <a data-flickr-embed="true"  href="https://www.flickr.com/photos/graham_alton/27024234218/in/photostream/" title="The Plate and Main Finalists"><img src="https://farm1.staticflickr.com/806/27024234218_ac4e4430a5_n.jpg" width="425" height="240" alt="The Plate and Main Finalists"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+          <a data-flickr-embed="true"  href="https://www.flickr.com/photos/graham_alton/39085335100/in/photostream/" title="The Plate and Main Finalists"><img src="https://farm5.staticflickr.com/4785/39085335100_a2e067a673_n.jpg" width="425" height="240" alt="The Plate and Main Finalists"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+          <a data-flickr-embed="true"  href="https://www.flickr.com/photos/graham_alton/26022547427/in/photostream/" title="First Frame Under Way"><img src="https://farm5.staticflickr.com/4778/26022547427_bd423b3439_n.jpg" width="425" height="240" alt="First Frame Under Way"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+          <a data-flickr-embed="true"  href="https://www.flickr.com/photos/graham_alton/40001133105/in/photostream/" title="Amelia and Thomas"><img src="https://farm1.staticflickr.com/795/40001133105_370463ae2d_m.jpg" width="135" height="240" alt="Amelia and Thomas"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+          <a data-flickr-embed="true"  href="https://www.flickr.com/photos/graham_alton/26013273447/in/photostream/" title="Watching the Snooker Final"><img src="https://farm1.staticflickr.com/793/26013273447_3f6ec18aab_n.jpg" width="320" height="240" alt="Watching the Snooker Final"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+          <a data-flickr-embed="true"  href="https://www.flickr.com/photos/graham_alton/40894678491/in/photostream/" title="Flowers for Sallie"><img src="https://farm1.staticflickr.com/795/40894678491_9ea43a6096_m.jpg" width="180" height="240" alt="Flowers for Sallie"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+          <a data-flickr-embed="true"  href="https://www.flickr.com/photos/graham_alton/40186829554/in/photostream/" title="Besties"><img src="https://farm1.staticflickr.com/805/40186829554_66024634e0_m.jpg" width="240" height="240" alt="Besties"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+        </div>
+
+      </div><!-- /.panel-body-->
+    </div><!-- /.panel-->
+
+    <!--
       Final Stages
     -->
     <div class="panel panel-default" ng-controller="CollapseCtrl">
@@ -7,18 +38,18 @@
       </div>
       <div class="panel-body" uib-collapse="isCollapsed">
 
-      <!--<h4>Winner</h4>
-      <p>WINNER NAME HERE</p>-->
+      <h4>Winner</h4>
+      <p>Richard Brooks</p>
 
       <h4>Final</h4>
-      <p>Steve Jenkins vs Richard Brooks</p>
+      <p>Steve Jenkins 0-2 Richard Brooks</p>
 
       <h4>Semi Finals</h4>
       <p>Semi Final 1: Bob Dickson conceded to Steve Jenkins</p>
       <p>Semi Final 2: Graham White 0-2 Richard Brooks</p>
 
       <h4>The Plate</h4>
-      <p>Wayne Rogers vs Richard Parker</p>
+      <p>Wayne Rogers 0-2 Richard Parker</p>
 
       </div><!-- /.panel-body-->
     </div><!-- /.panel-->
