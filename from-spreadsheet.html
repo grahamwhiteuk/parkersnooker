@@ -7,7 +7,7 @@
       </div>
       <div class="panel-body" uib-collapse="isCollapsed" ng-controller="leagueTablesCtrl">
 
-        <div ng-repeat="group in groups">
+        <div ng-repeat="group in groups" ng-if="group">
           <h4>Group {{group}}</h4>
           <div class="table-responsive">
           <table class="group-table table table-striped table-bordered table-hover table-condensed">
