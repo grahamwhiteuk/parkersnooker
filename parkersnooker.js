@@ -54,6 +54,7 @@ parkersnooker.controller('leagueTablesCtrl', function($scope,dataService) {
       // process the CSV
       for (var i = 1; i < csvData.length; i++) {
         var group   = csvData[i][0];
+        if (group === '') continue; // skip "other" fixtures
         var time    = csvData[i][1];
         var date    = csvData[i][2];
         var player1 = csvData[i][3];
