@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.5c2a32d86a3ea3aad404875854e7187e.js"
+  "/precache-manifest.f3c713ffcedfe1daf6a0f967ef24721e.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "parkersnooker-src"});
